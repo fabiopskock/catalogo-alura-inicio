@@ -35,7 +35,9 @@ public class JpaConfigurator {
 	    dataSource.setUrl("jdbc:mysql://" + url + "/alura_aws");
 	    dataSource.setUsername(user);
 	    dataSource.setPassword(password == null ? "" : password);
-
+		
+		System.out.println("\n\n\n\n\n"+url+"|"+user+"|"+password+"|"+"\n\n\n\n\n")
+		
 	    return dataSource;
 	}
 
